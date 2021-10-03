@@ -1,0 +1,78 @@
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto', serif;
+}
+
+.about-page h2 {
+    font-family: 'Roboto', serif;    
+    font-weight: bold;
+    color: #f09491;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 400px 0px 400px;
+    margin: 50px 0px 0px 0px;
+    position: static;
+    z-index: 1;
+    width: 40%;
+    line-height: 1.3em;
+}
+
+.about-description > div, .about-lang > div, .about-tech > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: #f3e7d6 0px 0px 16px;
+}
+
+
+.about-lang {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px 0px 0px;
+    position: static;
+    z-index: 1;
+}
+
+.lang {
+    object-fit: contain;
+    width: 100%;
+    height: 80px;
+}
+
+.about-tech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0px 100px 0px;
+    position: static;
+    z-index: 1;
+}
+
+.tech-list {
+    display: flex;
+    flex-direction: row;
+}
+
+.tech-list div {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 20px 20px;
+}
+
+.tech-img {
+    object-fit: contain;
+    width: 100%;
+    height: 80px;
+}

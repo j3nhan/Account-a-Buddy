@@ -1,0 +1,222 @@
+.chat-page {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    font-family: 'Cambria', 'Roboto', Helvetica, Arial, sans-serif;
+}
+
+/* Chat Index - list of convos */
+.chat-index {
+    height: 75vh;
+    background-color: #f9f9f9;
+    border: 1px solid rgb(212, 212, 212);
+    border-right: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.chat-index div {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    overflow: auto;
+    border-right: none;
+}
+
+.chat-index a {
+    color: black;
+    background-color: #ededed;
+    text-decoration: none;
+    border-bottom: 1px solid rgb(212, 212, 212);
+    padding: 10px 0px 0px 5px;
+    height: 50px;
+    font-size: 16px;
+    list-style: none;
+    transition: all 0.2s;
+}
+
+.chat-index .chosen {
+    color: white;
+    background-color: #f09491;
+    font-weight: bold;
+}
+
+.chat-index a:hover {
+    color: white;
+    background-color: rgb(255, 197, 200);
+}
+
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid rgb(212, 212, 212);
+    width: 900px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    padding: 0.6%;
+}
+
+/* Messages */
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    height: 62vh;
+    width: 100%;
+    padding: 10px 20px 0px 0px;
+    overflow-y: scroll;
+    overflow-x: none;
+}
+
+.chat-messages li {
+    margin: 0px 0px 15px 0px;
+    font-size: 16px;
+    overflow-wrap: normal;
+}
+
+.chat-messages .you {
+    text-align: right;
+}
+
+.chat-messages .partner {
+    text-align: left;
+}
+
+.chat-messages .author {
+    font-size: 10px;
+    height: 12px;
+    color: rgb(175, 175, 175);
+}
+
+.chat-messages .message {
+    display: inline-block;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+.chat-messages .you .message {
+    background-color: #f09491;
+    color: white;
+}
+
+.chat-messages .partner .message {
+    background-color: #f3e7d6;
+    color: rgb(87, 87, 87);
+}
+
+/* Chat Form - Input */
+.chat-form-container {
+    height: 40px;
+    width: 98%;
+    border: 1px solid rgb(175, 175, 175);
+    margin: 4vh 10px 0px 10px;
+    background-color: white;
+}
+
+#chat-form {
+    display: flex;
+}
+
+#chat-form input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin: 0px 0px 0px 0.8vw;
+    padding-top: 8px;
+    font-size: 18px;
+}
+
+#chat-form input::placeholder {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+#chat-form input:focus {
+    outline: none;
+}
+
+#chat-form button {
+    background: none;
+    border: none;
+}
+
+#chat-form .send {
+    background-color: #f09491;
+    border-radius: 5px;
+    color: white;
+    margin-top: 2px;
+    padding: 8px 9px;
+    width: 50px;
+}
+
+/* Font Awesome icons */
+.chat-container i {
+    padding-top: 10px;
+}
+
+.chat-container i:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+/* modals */
+.info, .settings, .confirmClick {
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 25%;
+    left: 25%;
+    border: 5px solid #f09491;
+    border-radius: 10px;
+    background-color: white;
+    margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(247, 75, 75);
+}
+
+/* info circle */
+.chat-container > i {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.chat-container > i:hover {
+    transform: scale(1.2);
+}
+
+/* info modal */
+.info {
+    border-color: #f09491;
+    color: #f09491;
+}
+
+/* settings */
+#chat-form > i {
+    margin: 0px 15px 0px 0px;
+}
+
+#chat-form > i:hover {
+    transform: scale(1.2);
+}
+
+/* settings modal */
+.settings button, .confirmClick button {
+    background-color: white;
+    border: 1px solid black;
+    color: rgb(87, 87, 87);
+    font-weight: 500;
+}
+
+.settings button:hover, .confirmClick button:hover {
+    color: #f09491;
+    transform: scale(1.2);
+}

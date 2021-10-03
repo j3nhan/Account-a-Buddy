@@ -1,0 +1,87 @@
+.goal-btn{
+    position: absolute;
+    display: block;
+    border: none ;
+    bottom: 3vh;
+    right: 1.5vw;
+    border-radius: 100%;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #f09491;
+    color: white;
+    cursor: pointer;
+}
+
+.goal-btn:hover {
+    background-color: #DCC7AA;
+}
+
+.all-goals {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 40px 20px 40px;
+}
+
+.goal-header{
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 5vh;
+    text-transform: capitalize; 
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'Roboto';
+    color: #f09491;
+}
+
+.no-goals{
+    margin-top: 20vh;
+    text-align: center;
+    font-size: 24px;
+}
+
+.box-title {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.box-category {
+    font-family: 'Roboto';
+}
+
+#goals-table {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    min-width: 100%;
+    margin: 50px 0px 0px;
+    padding-bottom: 5px;
+    border: none;
+    box-shadow: none;
+}
+
+#goals-table > div {
+    font-size: 20px;
+    color: #6C6A6A;
+    font-weight: 300;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+#goals-table .chat, #goals-table .rxn {
+    margin-right: 30px;
+}
+
+#goals-table .goal, #goals-table .category {
+    margin-left: 30px;
+}
+
+.goal-list {
+    padding: 20px 40px;
+}
+
+.goal, .category, .details, .chat, .rxn {
+    font-family: 'Roboto'
+}

@@ -1,0 +1,200 @@
+.modal-background {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.modal-child {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pin-edit-form-modal {
+  background-color: white;
+  padding: 20px;
+  min-height: 60vh;
+  min-width: 50vw;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-edit-form-modal::-webkit-scrollbar {
+    display: none;
+}
+
+.pin-edit-form-modal > div {
+  width: 100%;
+}
+
+.pin-edit-form-modal>div>*{
+  text-align: center;
+}
+
+.goal-form-radio-label {
+  font-size: 15px;
+  font-family: 'Roboto';
+}
+
+.h1-edit {
+  background-color: white;
+  position: absolute;
+  font-family: 'Roboto';
+}
+
+.modal-title{
+    width: 100%;
+    background: transparent;
+    border: none;
+    height: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    outline: none;
+    color: black; 
+    text-align: center;
+    cursor: text;
+    padding: 14px;
+  }
+
+.modal-title::placeholder {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.modal-description{
+  width: 50vw;
+  resize: none;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
+  font-size: 15px;
+  font-family: 'Roboto';
+  border-width: 0;
+  background-color: transparent;
+  outline: none;
+  font-style: italic;
+  margin-top: 2px;
+}
+
+.modal-description::placeholder {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+#habit-container {
+  display: flex;
+  flex-direction: column;
+  padding: 2px;
+  font-size: 15px;
+  color: #687A8F; 
+}
+
+.fa-plus-square {
+  color: #be9e71;
+  width: 29px;
+  height: 29px;
+  padding-right: 0.5px;
+  transition: all 0.3s;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.fa-plus-square:hover {
+  color: #DCC7AA;
+}
+
+.modal-milestone {
+  cursor: pointer;
+}
+
+.modal-milestone-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-milestone-list>div{
+  display: flex;
+  padding-bottom: 3px;
+}
+
+.modal-milestone-list > div > input {
+  border: none;
+  outline: none;
+  font-size: 15px;
+  font-family: 'Roboto';
+  font-style: italic;
+}
+
+.modal-milestone-list > div > input::placeholder {
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.milestone-input-box {
+  margin-left: 1px;
+  min-width: 90%;
+}
+
+.fa-trash-alt {
+  background-color: transparent;
+  border: none;
+  color: #be9e71;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.fa-trash-alt:hover {
+  color: #DCC7AA;
+}
+
+.modal-habit-buttons>div{
+  margin-right: 5px;
+}
+
+.modal-edit-button{
+  border-radius: 5px;
+  margin: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: cubic-bezier(0,0,.2,1);
+    display: inline-block;
+    --text-opacity: 1;
+    color: black;
+    font-size: 1rem;
+    --border-opacity: 1;
+    border-width: 2px;
+    font-weight: 500;
+    padding: .5rem 1.5rem;
+    border-radius: 10px;
+    flex-shrink: 0;
+    border-color: rgb(237, 236, 237);
+    background-color: white;
+    border-style: solid;
+    border-color: #f09491;
+    color: #f09491;
+}
+
+.modal-edit-button:hover {
+    color:white;
+    background-color: #f09491;
+}
+
+.modal-tag{
+  font-size: 20px;
+  margin: 25px 0px 0px 0px;
+  text-align: center;
+  font-family: 'Roboto';
+  color: #687A8F;
+  cursor: default;
+}
