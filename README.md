@@ -3,34 +3,62 @@
 
 ## Languages & Technologies
 Languages: Javascript, HTML5, CSS3
-Backend: MongoDB, Express.js, Mongoose
+Backend: MongoDB, Mongoose, Express.js
 Frontend: React, Node.js, Axios
 Hosting: Heroku
 
 ## Functionalities
 - User Authentication
     - Users can create an account and login to their profile
-- Goals / Milestones CRUD 
-    - Type
-        - Making a habit
-        - Breaking a habit
-    - Goal details
-        - Title
-        - Description of goal
-        - Milestones (subtasks)
+
+```Javascript
+export const signup = user => dispatch => (
+    APIUtil.signup(user).then((res) => {
+        const { token } = res.data;
+        localStorage.setItem('jwtToken', token);
+        APIUtil.setAuthToken(token);
+        const decoded = jwt_decode(token);
+        dispatch(receiveCurrentUser(decoded))
+    }, err => (
+        dispatch(receiveErrors(err.response.data))
+    ))
+);
+
+export const login = user => dispatch => (
+    APIUtil.login(user).then(res => {
+        const { token } = res.data;
+        localStorage.setItem('jwtToken', token);
+        APIUtil.setAuthToken(token);
+        const decoded = jwt_decode(token);
+        dispatch(receiveCurrentUser(decoded));
+    })
+        .catch(err => {
+            dispatch(receiveErrors(err.response.data));
+        })
+)
+```
+
+- Goals CRUD 
+    - Users can create as many goals as possible
+    <img src="images/creategoal_mern-3.gif" />
+
 - Daily Reaction Tracker
     - Users can record their emotion to each one of their goals once a day
+<img src="images/home-mern-3.gif" />
+
 - User will be paired with an anonymous accountability partner
     -  Users are paired based on whether they chose habit forming/breaking
+<img src="images/showgoal_mern-3.gif" />
+
 - Live Chat
     -  Users will be able to contact their partner in a private chatroom regarding each goal
+<img src="images/chatbuddy.gif" />
 
 ## Technical Challenges
 - Live chat & socket.io
     Direct messages to other users utilizes Javascript and [socket.io](https://socket.io/)
 
 ```Javascript
-
     io.on('connection', (socket) => {
 
         socket.on("join", (roomId, username) => {
@@ -63,6 +91,7 @@ Hosting: Heroku
         })
     }
 ```
+
 ## Team Members
 ⭐ [Ben Chai](https://www.linkedin.com/in/ben-chai/) 
 ⭐ [Jenny Nhan](https://www.linkedin.com/in/jennynhan/)
