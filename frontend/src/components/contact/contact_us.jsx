@@ -32,7 +32,7 @@ const TEAM = {
             src: "../jenny.jpeg", 
             alt: "Photo of Jenny the happy one"
         }, 
-        personalSite: "",
+        personalSite: "https://www.jennynhan.com/",
         github: "https://github.com/j3nhan", 
         linkedin: "https://www.linkedin.com/in/jennynhan/", 
         angellist: "https://angel.co/u/jenny-nhan",
