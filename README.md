@@ -3,8 +3,11 @@
 
 ## Languages & Technologies
 Languages: Javascript, HTML5, CSS3
+<br/>
 Backend: MongoDB, Mongoose, Express.js
+<br/>
 Frontend: React, Node.js, Axios
+<br/>
 Hosting: Heroku
 
 ## Functionalities
