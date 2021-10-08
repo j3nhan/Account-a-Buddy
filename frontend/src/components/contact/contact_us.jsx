@@ -12,7 +12,7 @@ const TEAM = {
         github: "https://github.com/zaminku", 
         linkedin: "https://www.linkedin.com/in/zamin-k/", 
         angellist: "https://angel.co/u/zamin-kugshia-1",
-        description: "I am Zamin the zombie."
+        description: "Hi! My name is Zamin and I enjoy designing and building software applications."
     }, 
     sam: {
         name: "Sam Song", 
